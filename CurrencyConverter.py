@@ -40,13 +40,13 @@ class App(tk.Tk):
         self.currency_converter = converter
 
         # Let’s Create the Converter
-        self.geometry("500x200")
+        self.geometry("600x300")
 
         #Label
         self.intro_label = Label(self, text = 'Welcome to Real Time Currency Convertor',  fg = 'blue', relief = tk.RAISED, borderwidth = 3)
         self.intro_label.config(font = ('Courier',15,'bold'))
 
-        self.date_label = Label(self, text = f"1 Indian Rupee equals = {self.currency_converter.convert('INR','USD',1)} USD \n Date : {self.currency_converter.data['date']}", relief = tk.GROOVE, borderwidth = 5)
+        self.date_label = Label(self, text = f"1 Nigeria naira equals = {self.currency_converter.convert('NGN','USD',1)} USD \n Date : {self.currency_converter.data['date']}", relief = tk.GROOVE, borderwidth = 5)
 
         self.intro_label.place(x = 10 , y = 5)
         self.date_label.place(x = 170, y= 50)
@@ -59,7 +59,7 @@ class App(tk.Tk):
         
         # dropdown
         self.from_currency_variable = StringVar(self)
-        self.from_currency_variable.set("INR") # default value
+        self.from_currency_variable.set("NGN") # default value
         self.to_currency_variable = StringVar(self)
         self.to_currency_variable.set("USD") # default value
         
