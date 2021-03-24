@@ -40,7 +40,7 @@ class App(tk.Tk):
         self.currency_converter = converter
 
         # Let’s Create the Converter
-        self.geometry("600x300")
+        self.geometry("500x200")
 
         #Label
         self.intro_label = Label(self, text = 'Welcome to Real Time Currency Convertor',  fg = 'blue', relief = tk.RAISED, borderwidth = 3)
